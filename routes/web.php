@@ -42,5 +42,5 @@ Route::post('/training-requests', [TrainingRequestController::class, 'store'])->
 Route::get('/training-requests/{id}/edit', [TrainingRequestController::class, 'edit'])->name('training-requests.edit');
 Route::put('/training-requests/{id}', [TrainingRequestController::class, 'update'])->name('training-requests.update');
 Route::delete('/training-requests/{id}', [TrainingRequestController::class, 'destroy'])->name('training-requests.destroy');
-Route::post('/training-requests/{id}/approve-by-manager', [TrainingRequestController::class, 'approveByManager'])->name('approveByManager');
-Route::post('/training-requests/{id}/approve-by-general-manager', [TrainingRequestController::class, 'approveByGeneralManager'])->name('approveByGeneralManager');
+Route::post('/training-requests/approve-by-manager', [TrainingRequestController::class, 'approveByManager'])->name('approveByManager');
+Route::post('/training-requests/approve-by-general-manager', [TrainingRequestController::class, 'approveByGeneralManager'])->name('approveByGeneralManager');
