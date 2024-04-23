@@ -35,24 +35,6 @@
             <span>Training Requests</span>
         </a>
     </li>
-    @if(Auth::user()->occupation === 'Manager')
-        <!-- Nav Item - Manager -->
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('approveByManager') }}">
-                <i class="fas fa-fw fa-user-tie"></i>
-                <span>Manager</span>
-            </a>
-        </li>
-    @elseif(Auth::user()->occupation === 'General Manager')
-        <!-- Nav Item - General Manager -->
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('approveByGeneralManager') }}">
-                <i class="fas fa-fw fa-user-tie"></i>
-                <span>General Manager</span>
-            </a>
-        </li>
-    @endif
-
 
 
     <!-- Divider -->
